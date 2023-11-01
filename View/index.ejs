@@ -31,14 +31,16 @@
           <th>Row Url</th>
           <th>Short Url</th>
         </tr>
+        <% genrate.forEach(gen => { %>
         <tr>
           <td>
-            <a href="https://mongoosejs.com/docs/index.html"
-              >https://mongoosejs.com/docs/index.html</a
-            >
+            <a href="<%= gen.rowUrl %>"><%= gen.rowUrl %></a>
           </td>
-          <td><a href="/1213213">1213213</a></td>
+          <td>
+            <a href="<%= gen.generatedUrl %>"><%= gen.generatedUrl %></a>
+          </td>
         </tr>
+        <% }); %>
       </table>
     </div>
   </body>

@@ -1,12 +1,16 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
+const urlid = require("shortid");
+
 const UrlSchema = new Schema({
   rowUrl: {
     type: String,
-    require: true,
+    required: true,
   },
   generatedUrl: {
     type: String,
+    default: urlid.generate,
+    required: true,
   },
 
   createdAT: {
