@@ -6,7 +6,6 @@
        <li>express.js</li>
        <li>mongodb</li>
  </ul>   
-```bash
-npm i 
-```
+
+### `npm start`
 <p>install all modules used in this project</p>
