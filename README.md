@@ -7,5 +7,5 @@
        <li>mongodb</li>
  </ul>   
 
-### `npm start`
+### `npm install`
 <p>install all modules used in this project</p>
